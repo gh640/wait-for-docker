@@ -9,7 +9,7 @@ python3 -m pip install wait-for-docker
 ## Usage
 
 ```bash
-wait-for-docker
+wait-for-docker && command_which_uses_docker
 ```
 
 The command wait until Docker daemon gets active. There's no configuration.
