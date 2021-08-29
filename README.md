@@ -1,6 +1,10 @@
-# `wait-for-docker`
-
 A simple script to wait for Docker daemon to be active.
+
+## Installation
+
+```bash
+python3 -m pip install wait-for-docker
+```
 
 ## Usage
 
