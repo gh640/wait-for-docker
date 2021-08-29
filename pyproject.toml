@@ -1,11 +1,27 @@
 [tool.poetry]
 name = "wait-for-docker"
 version = "0.1.0"
-description = ""
+description = "A simple script to wait for Docker daemon to be active."
+license = "MIT"
 authors = ["Goto Hayato <habita.gh@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/gh640/wait-for-docker"
+keywords = ["docker"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Utilities",
+]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = ">=3.6,<4.0"
 docker = "^5.0.0"
 # `six` needs to be declared here for a bug.
 # https://github.com/docker/docker-py/pull/2863
@@ -13,6 +29,7 @@ six = "^1.16.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
+pytest-mock = "^3.6.1"
 
 [tool.poetry.scripts]
 wait-for-docker = "wait_for_docker.main:main"
