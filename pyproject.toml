@@ -6,9 +6,16 @@ authors = ["Goto Hayato <habita.gh@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+docker = "^5.0.0"
+# `six` needs to be declared here for a bug.
+# https://github.com/docker/docker-py/pull/2863
+six = "^1.16.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
+
+[tool.poetry.scripts]
+wait-for-docker = "wait_for_docker.main:main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
