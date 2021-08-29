@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "A simple script to wait for Docker daemon to be active."
 license = "MIT"
 authors = ["Goto Hayato <habita.gh@gmail.com>"]
+readme = "README.md"
 repository = "https://github.com/gh640/wait-for-docker"
 keywords = ["docker"]
 classifiers = [
