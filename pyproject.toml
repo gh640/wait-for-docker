@@ -13,12 +13,15 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Topic :: Utilities",
 ]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = ">=3.6,<4.0"
 docker = "^5.0.0"
 # `six` needs to be declared here for a bug.
 # https://github.com/docker/docker-py/pull/2863
