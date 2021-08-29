@@ -3,16 +3,13 @@ import time
 
 import docker
 from docker.errors import DockerException
+from yaspin import yaspin
 
 
 def main():
-    while True:
-        if check_docker():
-            print(" ", end="")
-            break
-
-        print(".", end="", flush=True)
-        time.sleep(1)
+    with yaspin():
+        while not check_docker():
+            time.sleep(0.5)
 
     print("Docker is active now.")
 
