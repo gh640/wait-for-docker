@@ -1,6 +1,14 @@
-A simple script to wait for Docker daemon to be active.
+A simple script `wait-for-docker` to wait for Docker daemon to be active.
 
 ## Installation
+
+With `pipx`:
+
+```bash
+pipx install wait-for-docker
+```
+
+With `pip`:
 
 ```bash
 python3 -m pip install wait-for-docker
