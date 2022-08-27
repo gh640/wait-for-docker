@@ -23,11 +23,11 @@ classifiers = [
 [tool.poetry.dependencies]
 python = ">=3.7,<4.0"
 docker = "^6.0.0"
-yaspin = "^2.1.0"
+yaspin = "^2.0.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.0.0"
-pytest-mock = "^3.6.1"
+pytest-mock = "^3.0.0"
 
 [tool.poetry.scripts]
 wait-for-docker = "wait_for_docker.main:main"
