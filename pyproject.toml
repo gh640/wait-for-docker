@@ -26,7 +26,7 @@ docker = "^6.0.0"
 yaspin = "^2.1.0"
 
 [tool.poetry.dev-dependencies]
-pytest = "^6.2.4"
+pytest = "^7.0.0"
 pytest-mock = "^3.6.1"
 
 [tool.poetry.scripts]
