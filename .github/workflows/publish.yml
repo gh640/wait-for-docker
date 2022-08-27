@@ -21,7 +21,8 @@ jobs:
       - name: Check the version
         run: test $(poetry version --short) = ${{ github.ref_name }}
       - name: Build and publish to pypi
-        uses: JRubics/poetry-publish@v1.12
-        with:
-          pypi_token: ${{ secrets.PYPI_TOKEN }}
-          ignore_dev_requirements: "yes"
+        run: |
+          poetry install --no-dev
+          poetry build
+          poetry config pypi-token.pypi ${{ secrets.PYPI_TOKEN }}
+          poetry publish
