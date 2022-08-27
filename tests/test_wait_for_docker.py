@@ -1,15 +1,13 @@
-import pytest
-
 import time
 
 import docker
+import pytest
 from docker.errors import DockerException
-
 from wait_for_docker import __version__, main
 
 
 def test_version():
-    assert __version__ == '0.1.1'
+    assert __version__ == '0.2.0'
 
 
 def test_main_return_imediately(mocker):
