@@ -2,6 +2,9 @@ name: 'Install Poetry'
 description: 'Install Poetry'
 
 inputs:
+  python-version:
+    description: 'Python version'
+    required: true
   poetry-version:
     description: 'Poetry version'
     required: true
@@ -9,6 +12,11 @@ inputs:
 runs:
   using: 'composite'
   steps:
+    - name: Set up Python ${{ inputs.python-version }}
+      uses: actions/setup-python@v3
+      with:
+        python-version: ${{ inputs.python-version }}
+      id: setup_python
     - name: Cache Poetry cache
       uses: actions/cache@v3
       with:
