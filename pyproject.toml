@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "wait-for-docker"
-version = "0.1.1"
+version = "0.2.0"
 description = "A simple script to wait for Docker daemon to be active."
 license = "MIT"
 authors = ["Goto Hayato <habita.gh@gmail.com>"]
@@ -16,17 +16,18 @@ classifiers = [
     "Programming Language :: Python :: 3.7",
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
     "Topic :: Utilities",
 ]
 
 [tool.poetry.dependencies]
 python = ">=3.7,<4.0"
-docker = "^5.0.1"
-yaspin = "^2.1.0"
+docker = "^6.0.0"
+yaspin = "^2.0.0"
 
 [tool.poetry.dev-dependencies]
-pytest = "^6.2.4"
-pytest-mock = "^3.6.1"
+pytest = "^7.0.0"
+pytest-mock = "^3.0.0"
 
 [tool.poetry.scripts]
 wait-for-docker = "wait_for_docker.main:main"
