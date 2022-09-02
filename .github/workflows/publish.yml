@@ -18,7 +18,7 @@ jobs:
         with:
           python-version: ${{ env.PYTHON_VERSION }}
           poetry-version: ${{ env.POETRY_VERSION }}
-      - uses: Install the package
+      - name: Install the package
         run: poetry install --no-dev
       - name: Check the version
         run: test $(poetry version --short) = ${{ github.ref_name }}
