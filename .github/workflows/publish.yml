@@ -18,11 +18,12 @@ jobs:
         with:
           python-version: ${{ env.PYTHON_VERSION }}
           poetry-version: ${{ env.POETRY_VERSION }}
+      - uses: Install the package
+        run: poetry install --no-dev
       - name: Check the version
         run: test $(poetry version --short) = ${{ github.ref_name }}
       - name: Build and publish to pypi
         run: |
-          poetry install --no-dev
           poetry build
           poetry config pypi-token.pypi ${{ secrets.PYPI_TOKEN }}
           poetry publish
