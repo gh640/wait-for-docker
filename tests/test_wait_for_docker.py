@@ -7,7 +7,7 @@ from wait_for_docker import __version__, main
 
 
 def test_version():
-    assert __version__ == '0.2.1'
+    assert __version__ == '0.2.2'
 
 
 def test_main_return_imediately(mocker):
