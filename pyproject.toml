@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "wait-for-docker"
-version = "0.2.1"
+version = "0.2.2"
 description = "A simple script to wait for Docker daemon to be active."
 license = "MIT"
 authors = ["Goto Hayato <habita.gh@gmail.com>"]
