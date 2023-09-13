@@ -1,13 +1,13 @@
 name: Build and Publish to PyPI
 
 on:
-  push:
-    tags:
-      - "*.*.*"
+  release:
+    types:
+      - published
 
 env:
   PYTHON_VERSION: "3.11"
-  POETRY_VERSION: 1.5.0
+  POETRY_VERSION: "1.5.0"
 
 jobs:
   build:
