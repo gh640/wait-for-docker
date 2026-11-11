@@ -2,6 +2,8 @@ A simple script `wait-for-docker` to wait for Docker daemon to be active.
 
 ## Installation
 
+Requires Python 3.12 or later.
+
 With `pipx`:
 
 ```bash
@@ -21,3 +23,4 @@ wait-for-docker && command_which_uses_docker
 ```
 
 The command waits until Docker daemon gets active. There's no configuration.
+
